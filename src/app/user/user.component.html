@@ -1,0 +1,7 @@
+<h1>User Detail Information</h1>
+<div *ngIf ="user">
+  <h3>{{user.name}}</h3>
+  <p>email: {{user.email | uppercase}}</p>
+  <small>followers: {{user.followers}}</small>  
+  <p>Created at: {{user.created_at | date}}</p> 
+</div>
